@@ -89,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7774A7E22799C64D0038984E /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				777E35B6279854770087BDFA /* ContentView.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
 		777E35AD279854760087BDFA = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +111,8 @@
 		777E35B2279854770087BDFA /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				7774A7E22799C64D0038984E /* VIew */,
 				777E35B5279854770087BDFA /* offyApp.swift */,
-				777E35B6279854770087BDFA /* ContentView.swift */,
 				777E35B7279854770087BDFA /* Persistence.swift */,
 				777E35B8279854780087BDFA /* Assets.xcassets */,
 				777E35B3279854770087BDFA /* offy.xcdatamodeld */,
