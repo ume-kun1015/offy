@@ -17,8 +17,16 @@ struct ContentView: View {
                        Image(systemName: "doc.circle")
                        Text("issue")
                    }
-           }.tag(1)
-       }
+               }.tag(0)
+            
+            SettingTabRootView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "person.crop.circle")
+                        Text("accont")
+                    }
+                }.tag(1)
+        }
     }
 }
 
