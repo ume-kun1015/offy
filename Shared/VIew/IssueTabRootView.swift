@@ -1,14 +1,14 @@
 //
-//  ContentView.swift
-//  Shared
+//  IssueTabRootView.swift
+//  offy
 //
-//  Created by ryosuke umeki on 2022/01/19.
+//  Created by ryosuke umeki on 2022/01/21.
 //
 
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct IssueTabRootView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -83,8 +83,8 @@ private let itemFormatter: DateFormatter = {
     return formatter
 }()
 
-struct ContentView_Previews: PreviewProvider {
+struct IssueTabRootView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        IssueTabRootView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
