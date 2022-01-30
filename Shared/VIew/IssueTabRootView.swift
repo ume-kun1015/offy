@@ -44,7 +44,8 @@ struct IssueTabRootView: View {
                     }
                 }
             }
-            Text("Select an item")
+            .navigationTitle("Issues")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 

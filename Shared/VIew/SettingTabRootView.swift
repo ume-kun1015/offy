@@ -11,11 +11,16 @@ struct SettingTabRootView: View {
     init() {
         UITableView.appearance().backgroundColor = UIColor.white
     }
-   var body: some View {
-       List {
-           Text("メールアドレス")
+   
+    var body: some View {
+       NavigationView {
+           List {
+               Text("メールアドレス")
+           }
+           .navigationTitle("Account")
+           .navigationBarTitleDisplayMode(.inline)
        }
-   }
+    }
 }
 
 struct SettingTabRootView_Previews: PreviewProvider {
