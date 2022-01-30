@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SettingTabRootView: View {
+    init() {
+        UITableView.appearance().backgroundColor = UIColor.white
+    }
    var body: some View {
        List {
            Text("メールアドレス")

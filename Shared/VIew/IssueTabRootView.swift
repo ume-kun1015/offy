@@ -9,6 +9,10 @@ import SwiftUI
 import CoreData
 
 struct IssueTabRootView: View {
+    init() {
+        UITableView.appearance().backgroundColor = UIColor.white
+    }
+
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
