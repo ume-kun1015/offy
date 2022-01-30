@@ -29,9 +29,12 @@ struct IssueTabRootView: View {
                     } label: {
                         Text(item.timestamp!, formatter: itemFormatter)
                     }
+                    .listRowInsets(EdgeInsets())
                 }
                 .onDelete(perform: deleteItems)
             }
+            .listStyle(PlainListStyle())
+            .padding(24)
             .toolbar {
 #if os(iOS)
                 ToolbarItem(placement: .navigationBarTrailing) {

@@ -15,8 +15,10 @@ struct SettingTabRootView: View {
     var body: some View {
        NavigationView {
            List {
-               Text("メールアドレス")
+               Text("メールアドレス").listRowInsets(EdgeInsets())
            }
+           .listStyle(PlainListStyle())
+           .padding(24)
            .navigationTitle("Account")
            .navigationBarTitleDisplayMode(.inline)
        }
