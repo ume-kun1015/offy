@@ -26,6 +26,7 @@
 		777E35E6279854780087BDFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777E35B8279854780087BDFA /* Assets.xcassets */; };
 		777E35E7279854780087BDFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777E35B8279854780087BDFA /* Assets.xcassets */; };
 		778F838227A6C97A00797488 /* IssueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F838127A6C97A00797488 /* IssueItem.swift */; };
+		778F838627A7856C00797488 /* IssueDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F838527A7856C00797488 /* IssueDetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		777E35DA279854780087BDFA /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		777E35DC279854780087BDFA /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		778F838127A6C97A00797488 /* IssueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueItem.swift; sourceTree = "<group>"; };
+		778F838527A7856C00797488 /* IssueDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		7774A7E22799C64D0038984E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				778F838327A7853900797488 /* Screens */,
 				778F837F27A6C95200797488 /* Components */,
 				777E35B6279854770087BDFA /* ContentView.swift */,
 				7774A7E42799C7900038984E /* IssueTabRootView.swift */,
@@ -180,6 +183,22 @@
 			isa = PBXGroup;
 			children = (
 				778F838127A6C97A00797488 /* IssueItem.swift */,
+			);
+			path = Issues;
+			sourceTree = "<group>";
+		};
+		778F838327A7853900797488 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				778F838427A7855D00797488 /* Issues */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		778F838427A7855D00797488 /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				778F838527A7856C00797488 /* IssueDetailScreen.swift */,
 			);
 			path = Issues;
 			sourceTree = "<group>";
@@ -348,6 +367,7 @@
 				7774A7E52799C7900038984E /* IssueTabRootView.swift in Sources */,
 				777E35E2279854780087BDFA /* ContentView.swift in Sources */,
 				7774A7E82799CDAA0038984E /* SettingTabRootView.swift in Sources */,
+				778F838627A7856C00797488 /* IssueDetailScreen.swift in Sources */,
 				778F838227A6C97A00797488 /* IssueItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

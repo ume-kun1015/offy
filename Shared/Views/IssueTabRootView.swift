@@ -24,8 +24,8 @@ struct IssueTabRootView: View {
         NavigationView {
             List {
                 ForEach(items) { item in
-                    NavigationLink() {
-                        Text("Item at \(item.timestamp!)")
+                    NavigationLink {
+                        IssueDetailScreen()
                     } label: {
                         IssueItem(text: "Item at \(item.timestamp!)")
                     }
