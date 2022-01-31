@@ -24,10 +24,10 @@ struct IssueTabRootView: View {
         NavigationView {
             List {
                 ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                    NavigationLink() {
+                        Text("Item at \(item.timestamp!)")
                     } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+                        IssueItem(text: "Item at \(item.timestamp!)")
                     }
                     .listRowInsets(EdgeInsets())
                 }
@@ -78,13 +78,6 @@ struct IssueTabRootView: View {
         }
     }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 struct IssueTabRootView_Previews: PreviewProvider {
     static var previews: some View {
