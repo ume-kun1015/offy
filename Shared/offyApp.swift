@@ -11,6 +11,14 @@ import SwiftUI
 struct offyApp: App {
     let persistenceController = PersistenceController.shared
 
+    init() {
+        let coloredNavAppearance = UINavigationBarAppearance()
+        coloredNavAppearance.configureWithOpaqueBackground()
+        coloredNavAppearance.backgroundColor = UIColor.white
+        UINavigationBar.appearance().standardAppearance = coloredNavAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = coloredNavAppearance
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()

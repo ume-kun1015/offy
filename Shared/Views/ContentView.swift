@@ -26,7 +26,7 @@ struct ContentView: View {
                         Text("accont")
                     }
                 }.tag(1)
-        }
+        }.accentColor(.orange)
     }
 }
 

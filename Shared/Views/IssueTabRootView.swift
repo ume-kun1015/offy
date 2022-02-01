@@ -9,6 +9,10 @@ import SwiftUI
 import CoreData
 
 struct IssueTabRootView: View {
+    init() {
+        UITableView.appearance().backgroundColor = UIColor.white
+    }
+
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -21,26 +25,25 @@ struct IssueTabRootView: View {
             List {
                 ForEach(items) { item in
                     NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                        IssueDetailScreen()
                     } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+                        IssueItem(text: "Item at \(item.timestamp!)")
                     }
+                    .listRowInsets(EdgeInsets())
                 }
                 .onDelete(perform: deleteItems)
             }
+            .listStyle(PlainListStyle())
+            .padding(24)
             .toolbar {
-#if os(iOS)
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
-                ToolbarItem {
                     Button(action: addItem) {
                         Label("Add Item", systemImage: "plus")
                     }
                 }
             }
-            Text("Select an item")
+            .navigationTitle("Issues")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 
@@ -75,13 +78,6 @@ struct IssueTabRootView: View {
         }
     }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 struct IssueTabRootView_Previews: PreviewProvider {
     static var previews: some View {
