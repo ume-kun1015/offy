@@ -6,6 +6,7 @@ target 'offy (iOS)' do
   use_frameworks!
 
   # Pods for offy (iOS)
+  pod 'SwiftLint'
 
 end
 
