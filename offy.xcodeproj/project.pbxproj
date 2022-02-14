@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64A0644E00433E81D0DE001A /* Pods_offy__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA7995045BBECCAD86697BF /* Pods_offy__macOS_.framework */; };
+		6E468F5C51B338B007F9F512 /* Pods_offy__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BC42438F0330DAF4298AF8 /* Pods_offy__iOS_.framework */; };
 		7774A7E52799C7900038984E /* IssueTabRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774A7E42799C7900038984E /* IssueTabRootView.swift */; };
 		7774A7E62799C7900038984E /* IssueTabRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774A7E42799C7900038984E /* IssueTabRootView.swift */; };
 		7774A7E82799CDAA0038984E /* SettingTabRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774A7E72799CDAA0038984E /* SettingTabRootView.swift */; };
@@ -47,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05F1E188393D7997B5BA8C21 /* Pods-offy (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-offy (iOS).debug.xcconfig"; path = "Target Support Files/Pods-offy (iOS)/Pods-offy (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		41BC42438F0330DAF4298AF8 /* Pods_offy__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_offy__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73216A5652D41D58D59E0463 /* Pods-offy (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-offy (macOS).debug.xcconfig"; path = "Target Support Files/Pods-offy (macOS)/Pods-offy (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 		7774A7E42799C7900038984E /* IssueTabRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTabRootView.swift; sourceTree = "<group>"; };
 		7774A7E72799CDAA0038984E /* SettingTabRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTabRootView.swift; sourceTree = "<group>"; };
 		777E35B4279854770087BDFA /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
@@ -65,6 +70,9 @@
 		777E35DC279854780087BDFA /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		778F838127A6C97A00797488 /* IssueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueItem.swift; sourceTree = "<group>"; };
 		778F838527A7856C00797488 /* IssueDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailScreen.swift; sourceTree = "<group>"; };
+		DAA7995045BBECCAD86697BF /* Pods_offy__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_offy__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E309914DA93686EF10074E18 /* Pods-offy (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-offy (iOS).release.xcconfig"; path = "Target Support Files/Pods-offy (iOS)/Pods-offy (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		EF225F66DF538FADF3C899D4 /* Pods-offy (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-offy (macOS).release.xcconfig"; path = "Target Support Files/Pods-offy (macOS)/Pods-offy (macOS).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E468F5C51B338B007F9F512 /* Pods_offy__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A0644E00433E81D0DE001A /* Pods_offy__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CC04F25492EF3361DEC2805 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41BC42438F0330DAF4298AF8 /* Pods_offy__iOS_.framework */,
+				DAA7995045BBECCAD86697BF /* Pods_offy__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7774A7E22799C64D0038984E /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +138,8 @@
 				777E35CD279854780087BDFA /* Tests iOS */,
 				777E35D9279854780087BDFA /* Tests macOS */,
 				777E35BE279854780087BDFA /* Products */,
+				81C038553D530800F2DB399F /* Pods */,
+				5CC04F25492EF3361DEC2805 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +224,17 @@
 			path = Issues;
 			sourceTree = "<group>";
 		};
+		81C038553D530800F2DB399F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05F1E188393D7997B5BA8C21 /* Pods-offy (iOS).debug.xcconfig */,
+				E309914DA93686EF10074E18 /* Pods-offy (iOS).release.xcconfig */,
+				73216A5652D41D58D59E0463 /* Pods-offy (macOS).debug.xcconfig */,
+				EF225F66DF538FADF3C899D4 /* Pods-offy (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 777E35EA279854780087BDFA /* Build configuration list for PBXNativeTarget "offy (iOS)" */;
 			buildPhases = (
+				6A6B0F97AAA88F244D9728C2 /* [CP] Check Pods Manifest.lock */,
 				777E35B9279854780087BDFA /* Sources */,
 				777E35BA279854780087BDFA /* Frameworks */,
 				777E35BB279854780087BDFA /* Resources */,
+				77F6330627B9323500D4AA0A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -227,6 +261,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 777E35ED279854780087BDFA /* Build configuration list for PBXNativeTarget "offy (macOS)" */;
 			buildPhases = (
+				A606513C4FB244E6937147AA /* [CP] Check Pods Manifest.lock */,
 				777E35BF279854780087BDFA /* Sources */,
 				777E35C0279854780087BDFA /* Frameworks */,
 				777E35C1279854780087BDFA /* Resources */,
@@ -355,6 +390,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A6B0F97AAA88F244D9728C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-offy (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77F6330627B9323500D4AA0A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		A606513C4FB244E6937147AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-offy (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		777E35B9279854780087BDFA /* Sources */ = {
@@ -532,6 +631,7 @@
 		};
 		777E35EB279854780087BDFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F1E188393D7997B5BA8C21 /* Pods-offy (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -561,6 +661,7 @@
 		};
 		777E35EC279854780087BDFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E309914DA93686EF10074E18 /* Pods-offy (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -591,6 +692,7 @@
 		};
 		777E35EE279854780087BDFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73216A5652D41D58D59E0463 /* Pods-offy (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -617,6 +719,7 @@
 		};
 		777E35EF279854780087BDFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF225F66DF538FADF3C899D4 /* Pods-offy (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

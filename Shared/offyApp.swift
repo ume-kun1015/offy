@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct offyApp: App {
+struct OffyApp: App {
     let persistenceController = PersistenceController.shared
 
     init() {
